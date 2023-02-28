@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background_color">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            //Arm
+
+            <ImageView
+                android:layout_width="500dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/arm" />
+
+            <Button
+                android:id="@+id/arms"
+                android:layout_width="500dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@color/cardview_dark_background"
+                android:onClick="ImageButtonClicked"
+                android:text=" Arms "
+                android:textAllCaps="false"
+                android:textColor="?attr/text_color"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            //leg
+
+            <ImageView
+                android:layout_width="500dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:src="@drawable/leg"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:id="@+id/legs"
+                android:layout_width="500dp"
+                android:layout_gravity="center"
+                android:layout_height="50dp"
+                android:onClick="ImageButtonClicked"
+                android:background="@color/cardview_dark_background"
+                android:text=" Legs "
+                android:textAllCaps="false"
+                android:textColor="?attr/text_color"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            //Abs
+            <ImageView
+                android:layout_width="500dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:src="@drawable/abb"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:id="@+id/Abs"
+                android:layout_width="500dp"
+                android:layout_gravity="center"
+                android:layout_height="50dp"
+                android:onClick="ImageButtonClicked"
+                android:background="@color/cardview_dark_background"
+                android:text=" Abs "
+                android:textAllCaps="false"
+                android:textColor="?attr/text_color"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            //Butt
+            <ImageView
+                android:layout_width="500dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:src="@drawable/butt"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:id="@+id/Butt"
+                android:layout_width="500dp"
+                android:layout_gravity="center"
+                android:layout_height="50dp"
+                android:onClick="ImageButtonClicked"
+                android:background="@color/cardview_dark_background"
+                android:text=" Butt "
+                android:textAllCaps="false"
+                android:textColor="?attr/text_color"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            //Breast
+            <ImageView
+                android:layout_width="500dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:src="@drawable/arm"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:id="@+id/Bust"
+                android:layout_width="500dp"
+                android:layout_gravity="center"
+                android:layout_height="50dp"
+                android:onClick="ImageButtonClicked"
+                android:background="@color/cardview_dark_background"
+                android:text=" Bust "
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:textColor="?attr/text_color"
+                android:textStyle="bold"
+                android:layout_marginBottom="40dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

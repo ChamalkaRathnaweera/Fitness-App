@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background_color">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            //Topic
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Lying Tricep Extension"
+                android:textColor="?attr/text_color"
+                android:textSize="30sp">
+
+            </TextView>
+
+            //How to do this
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:text="How to do?"
+                android:textColor="?attr/text_color"
+                android:textStyle="bold">
+
+            </TextView>
+
+            //Steps
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:text="Lie face up on a bench with your feet flat on the floor, and hold a pair of dumbbells above your chest with your arms straight and your palms facing each other.\n \n Without moving your upper arms, bend your elbows and lower the dumbbells to the sides of your head until your forearms dip below parallel to the floor. \n \n Pause, and then return to the starting position."
+                android:textStyle="bold"
+                android:textColor="?attr/text_color">
+
+            </TextView>
+
+            //gif
+            <LinearLayout
+                android:layout_width="383dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="194dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/lying_tricep" />
+
+            </LinearLayout>
+
+            //timer
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="145dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/timer">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="170dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="01:00"
+                    android:textColor="?attr/text_color"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+
+                </TextView>
+            </RelativeLayout>
+
+            //Buttons
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                //Previous
+                <Button
+                    android:id="@+id/previousButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Back"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </Button>
+
+                //Start
+                <Button
+                    android:id="@+id/startButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Start"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </Button>
+
+                //Next
+                <Button
+                    android:id="@+id/nextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Next"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+
+                </Button>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

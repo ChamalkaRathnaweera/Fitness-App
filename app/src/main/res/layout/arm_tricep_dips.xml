@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background_color">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Tricep Dips"
+                android:textColor="?attr/text_color"
+                android:textSize="30sp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:text="How to do?"
+                android:textColor="?attr/text_color"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:text="Press into your palms to lift your body and slide forward just far enough that your behind clears the edge of the chair. \n \n Lower yourself until your elbows are bent between 45 and 90 degrees. Control the movement throughout the range of motion.\n \nPush yourself back up slowly until your arms are almost straight and repeat."
+                android:textStyle="bold"
+                android:textColor="?attr/text_color">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="383dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="194dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/tricep_dips" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="145dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/timer">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="170dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="01:00"
+                    android:textColor="?attr/text_color"
+                    android:textSize="20dp"
+                    android:textStyle="bold">
+
+                </TextView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/previousButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Back"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/startButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Start"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+
+                </Button>
+
+                <Button
+                    android:id="@+id/nextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Next"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textSize="20sp"
+                    android:textStyle="bold">
+
+
+                </Button>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

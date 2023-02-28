@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="meal"
+    android:background="?attr/background_color">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            //Images
+
+            <ViewFlipper
+                android:id="@+id/viewFlipper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoStart="true"
+                android:flipInterval="2000"
+                android:inAnimation="@android:anim/slide_in_left"
+                android:outAnimation="@android:anim/slide_out_right"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.001">
+
+                <ImageView
+                    android:layout_width="500dp"
+                    android:layout_height="300dp"
+                    android:background="@drawable/meal_one">
+
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="500dp"
+                    android:layout_height="300dp"
+                    android:background="@drawable/meal_two">
+
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="400dp"
+                    android:layout_height="300dp"
+                    android:background="@drawable/meal_three">
+
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="400dp"
+                    android:layout_height="300dp"
+                    android:background="@drawable/meal_four">
+
+                </ImageView>
+
+            </ViewFlipper>
+
+            //Monday
+            <Button
+                android:id="@+id/mon"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:onClick="ImageButtonClicked"
+                android:text=" Monday "
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:textColor="?attr/text_color"
+                android:textStyle="bold" />
+
+            //Thuesday
+            <Button
+                android:id="@+id/thue"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:onClick="ImageButtonClicked"
+                android:text=" Thuesday "
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:textColor="?attr/text_color"
+                android:textStyle="bold" />
+
+            //Wednesday
+            <Button
+                android:id="@+id/wed"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:onClick="ImageButtonClicked"
+                android:text=" Wednesday"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:textColor="?attr/text_color"
+                android:textStyle="bold" />
+
+            //Thursday
+            <Button
+                android:id="@+id/thu"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:onClick="ImageButtonClicked"
+                android:text="Thursday "
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:textColor="?attr/text_color"
+                android:textStyle="bold" />
+
+            //Friday
+            <Button
+                android:id="@+id/fri"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:onClick="ImageButtonClicked"
+                android:text=" Friday "
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:textColor="?attr/text_color"
+                android:textStyle="bold" />
+
+            //Saturday
+            <Button
+                android:id="@+id/sat"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:onClick="ImageButtonClicked"
+                android:text=" Saturday "
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:textColor="?attr/text_color"
+                android:textStyle="bold" />
+
+            //Sunday
+            <Button
+                android:id="@+id/sun"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:onClick="ImageButtonClicked"
+                android:text=" Sunday "
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="?attr/text_color"
+                android:layout_marginBottom="30dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
+
+

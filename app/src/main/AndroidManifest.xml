@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fitnessapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Light">
+        <activity android:name=".Home"></activity>
+        <activity android:name=".profile" />
+        <activity android:name=".Exercise" />
+        <activity android:name=".butt" />
+        <activity android:name=".Breast_chest_fly" />
+        <activity android:name=".abb" />
+        <activity android:name=".leg" />
+        <activity android:name=".Arm_lying_tricep" />
+        <activity android:name=".Breast_chest_press" />
+        <activity android:name=".Breast_dumbell_swing" />
+        <activity android:name=".Breast_side_bend" />
+        <activity android:name=".Breast_toe_touch" />
+        <activity android:name=".BMI" />
+        <activity android:name=".meal" />
+        <activity android:name=".page_two" />
+        <activity android:name=".Arm_split_square" />
+        <activity android:name=".Arm_tricep_dips" />
+        <activity android:name=".Arm_plank_straight" />
+        <activity android:name=".meal_link" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

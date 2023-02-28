@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Beginner"
+    android:background="?attr/background_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        //Topic
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/bmical"
+
+            android:text="BMI Calculator"
+            android:gravity="center"
+            android:textColor="?attr/text_color"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_margin="30dp">
+
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/data"
+            android:textColor="@color/black"
+            android:orientation="vertical"
+            android:layout_below="@+id/bmical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_margin="10dp">
+
+            //Height
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Height"
+                android:textSize="15dp"
+                android:textColor="?attr/text_color"
+                android:textStyle="bold"
+                android:id="@+id/txtheight">
+            </TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="cm"
+                android:textColor="?attr/text_color"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:paddingLeft="10dp"
+                android:id="@+id/height"
+                android:backgroundTint="@color/cardview_dark_background"
+                android:autofillHints="@color/black">
+
+            </EditText>
+
+            //Weight
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Weight"
+                android:textSize="15dp"
+                android:textColor="?attr/text_color"
+                android:textStyle="bold"
+                android:id="@+id/txtweight">
+            </TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="kg"
+                android:textColor="?attr/text_color"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                android:paddingLeft="10dp"
+                android:id="@+id/weight"
+                android:backgroundTint="@color/cardview_dark_background"
+                android:autofillHints="@color/black">
+
+            </EditText>
+        </LinearLayout>
+
+        //Gender
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/genderlayout"
+            android:layout_below="@+id/data"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/malelayout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:textColor="?attr/text_color"
+                    android:textStyle="bold"
+                    android:id="@+id/txtMale">
+                </TextView>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/male"
+                    android:id="@+id/male"
+                    android:padding="10dp">
+
+                </ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:id="@+id/femalelayout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:textColor="?attr/text_color"
+                    android:textStyle="bold"
+                    android:id="@+id/txtfemale">
+                </TextView>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/female"
+                    android:id="@+id/female"
+                    android:padding="10dp">
+
+                </ImageView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        //Calculate
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/button"
+            android:text="Calculate"
+            android:layout_below="@+id/genderlayout"
+            android:layout_margin="10dp"
+            android:background="@color/cardview_dark_background"
+            android:textColor="?attr/text_color"
+            android:textStyle="bold"
+            android:textSize="10dp">
+
+        </Button>
+
+        //result
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="?attr/text_color"
+            android:background="@color/white"
+            android:id="@+id/result"
+            android:layout_below="@+id/button"
+            android:layout_margin="10dp">
+
+        </TextView>
+
+        //Compliments
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="?attr/text_color"
+            android:background="@color/white"
+            android:id="@+id/condition"
+            android:layout_below="@+id/result"
+            android:layout_margin="10dp">
+
+        </TextView>
+
+        //Next Page
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/nextButton"
+            android:text="Go"
+            android:layout_below="@+id/condition"
+            android:layout_margin="10dp"
+            android:background="@color/cardview_dark_background"
+            android:textColor="?attr/text_color"
+            android:textStyle="bold"
+            android:textSize="10dp">
+
+        </Button>
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Advanced">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/exerciseimg"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/exercise"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/Buttonexercise"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/cardview_dark_background"
+            android:layout_below="@+id/exerciseimg"
+            android:text="Exercises "
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/recipeimg"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/Buttonexercise"
+            android:layout_height="250dp"
+            android:src="@drawable/recipe"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/Buttonrecipe"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/cardview_dark_background"
+            android:layout_below="@+id/recipeimg"
+            android:text="Recipe"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</FrameLayout>

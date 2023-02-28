@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background_color"
+    tools:context=".page_two">
+    //Images
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoStart="true"
+        android:flipInterval="2000"
+        android:inAnimation="@android:anim/slide_in_left"
+        android:outAnimation="@android:anim/slide_out_right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="@drawable/one">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="@drawable/two">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="@drawable/three">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="@drawable/four">
+
+        </ImageView>
+
+    </ViewFlipper>
+    <TextView
+        android:layout_width="500dp"
+        android:layout_height="2000dp"
+        android:textStyle="bold"
+        android:background="#FFC0CB"
+        android:textSize="70dp"
+        android:text="Lose Weight \n In 7 Days"
+        android:gravity="center"
+        android:layout_below="@+id/viewFlipper"
+        android:textColor="?attr/text_color">
+
+</TextView>
+
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_navigation"
+        android:layout_marginBottom="-116dp"></FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav_menu">
+
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</RelativeLayout>
